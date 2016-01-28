@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 import os
 
-f = open(os.environ.get('CIRCLE_ARTIFACTS')"/output.txt", "w")
+dirname = os.environ.get('CIRCLE_ARTIFACTS')
+f = open(dirname + '/output.txt', "w")
 
 f.write("hello world\n")
 
