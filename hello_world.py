@@ -1,2 +1,7 @@
 #!/usr/bin/env python
-print "hello world"
+
+f = open("output.txt", "w")
+
+f.write("hello world\n")
+
+f.close()
